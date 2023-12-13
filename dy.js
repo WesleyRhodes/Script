@@ -7,6 +7,7 @@
 hostname = %APPEND% tnc*.zijieapi.com, aweme.snssdk.com
 
 // https://tnc11-aliec2.zijieapi.com/get_domains/v5/?
+//update reg 
  */
 
 let url = $request.url;
