@@ -1,3 +1,14 @@
+/**
+ * 
+[Script]
+抖音 = type=http-response,pattern=^https:\/\/((tnc|dm).+\.[^\/]+\.com\/\w+\/v\d\/\?|aweme\.snssdk\.com\/aweme\/homepage\/render\/\?),requires-body=1,script-path=https://github.com/Keywos/rule/raw/main/JS/dy.js,max-size=0
+
+[MITM]
+hostname = %APPEND% tnc*.zijieapi.com, aweme.snssdk.com
+
+// https://tnc11-aliec2.zijieapi.com/get_domains/v5/?
+ */
+
 let url = $request.url;
 
 const TabArr = ["同城", "经验", "热点", "商城"];
