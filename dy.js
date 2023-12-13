@@ -15,7 +15,7 @@ let url = $request.url;
 const TabArr = ["同城", "经验", "热点", "商城"];
 
 
-if (/(tnc|dm)[^\/]+\.zijieapi.com\/get_domains\/v\d\/\?/.test(url)) {
+if (/(tnc|dm)[^\/]+\.\w+.com\/get_domains\/v\d\/\?/.test(url)) {
 
 url = url.replace(/\/\?/g, "");
 
