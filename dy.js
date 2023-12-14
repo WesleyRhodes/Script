@@ -28,7 +28,7 @@ status: 302,
 headers: { Location: url },
 
 };
-console.log('dy123'+response);
+console.log('dy123'+JSON.stringify(response);
 $done({ response });
 
 } else if (/aweme\.snssdk\.com\/aweme\/homepage\/render/.test(url)) {
@@ -67,8 +67,7 @@ $done({ body: JSON.stringify(i) });
 
 } else {
 
-
-console.log('dy123不符合302⚠️');
+console.log('dy123不符合302⚠️'+url);
 
 
 $done()
