@@ -28,7 +28,7 @@ status: 302,
 headers: { Location: url },
 
 };
-
+console.log('dy123'+response);
 $done({ response });
 
 } else if (/aweme\.snssdk\.com\/aweme\/homepage\/render/.test(url)) {
