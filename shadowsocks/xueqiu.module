@@ -2,6 +2,17 @@
 #!desc=雪球去广告 quote=@RuCu6
 
 
-[URL Rewrite]
+[MITM]
+hostname= %APPEND%  *.xueqiu.com
 
-^https:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
+[URL Rewrite]
+^https?:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? _ REJECT-DICT
+^https?:\/\/fund\.xueqiu\.com\/fundx _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json _ REJECT-DICT
+^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json _ REJECT-DICT
+^https?:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles _ REJECT-DICT
