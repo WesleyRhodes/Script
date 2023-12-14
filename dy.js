@@ -28,7 +28,8 @@ status: 302,
 headers: { Location: url },
 
 };
-console.log('dy123'+JSON.stringify(response);
+var i = JSON.parse(response);
+console.log('dy123'+JSON.stringify(i);
 $done({ response });
 
 } else if (/aweme\.snssdk\.com\/aweme\/homepage\/render/.test(url)) {
