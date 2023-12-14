@@ -5,16 +5,16 @@ hostname = %APPEND% *.youdao.com
 
 
 [URL Rewrite]
-^https?:\/\/dict.youdao.com\/vip\/plan\/list _ REGECT-DICT
-^https?:\/\/dictvip-business.youdao.com\/common\/vipconfig _ REGECT-DICT
-^https?:\/\/wow.youdao.com\/feed _ REGECT-DICT
-^https?:\/\/wow.youdao.com\/kvConfig\/get _ REGECT-DICT
-^https?:\/\/dict-live.youdao.com\/client\/user\/live\/hp\/feed _ REGECT-DICT
-^https?:\/\/dict.youdao.com\/dictusertask\/mission\/list _ REGECT-DICT
-^https?:\/\/dict.youdao.com\/homepage\/activity\/entrance\/get _ REGECT-DICT-dict
-^https?:\/\/dict.youdao.com\/infoline\/toolbar\/data\/v2 _ REGECT-DICT
-^https?:\/\/cdke.youdao.com\/course3\/recommend\/dict\/startup  _ REGECT-DICT
-^https?:\/\/api-overmind.youdao.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig _ REGECT-DICT
-^https?:\/\/wow.youdao.com\/post\/glQDUEzoDV _ REGECT-DICT
-^https?:\/\/dict.youdao.com\/dictusertask\/system\/config _ REGECT-DICT
-^https?:\/\/foundation.youdao.com\/initManager _ REGECT-DICT-dict
+^https?:\/\/dict.youdao.com\/vip\/plan\/list _ REJECT-DICT
+^https?:\/\/dictvip-business.youdao.com\/common\/vipconfig _ REJECT-DICT
+^https?:\/\/wow.youdao.com\/feed _ REJECT-DICT
+^https?:\/\/wow.youdao.com\/kvConfig\/get _ REJECT-DICT
+^https?:\/\/dict-live.youdao.com\/client\/user\/live\/hp\/feed _ REJECT-DICT
+^https?:\/\/dict.youdao.com\/dictusertask\/mission\/list _ REJECT-DICT
+^https?:\/\/dict.youdao.com\/homepage\/activity\/entrance\/get _ REJECT-DICT-dict
+^https?:\/\/dict.youdao.com\/infoline\/toolbar\/data\/v2 _ REJECT-DICT
+^https?:\/\/cdke.youdao.com\/course3\/recommend\/dict\/startup  _ REJECT-DICT
+^https?:\/\/api-overmind.youdao.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig _ REJECT-DICT
+^https?:\/\/wow.youdao.com\/post\/glQDUEzoDV _ REJECT-DICT
+^https?:\/\/dict.youdao.com\/dictusertask\/system\/config _ REJECT-DICT
+^https?:\/\/foundation.youdao.com\/initManager _ REJECT-DICT-dict
