@@ -1,0 +1,10 @@
+#!name=dy
+#!desc=抖音MITM,改写自KEY佬
+#!author=nnnjjj
+
+[MITM]
+
+hostname = %APPEND% tnc*.zijieapi.com, aweme.snssdk.com
+
+[Script]
+dy= type=http-response, pattern=^https:\/\/((tnc|dm)[^\/]+\.\w+.com\/get_domains\/v\d\/\?|aweme\.snssdk\.com\/aweme\/homepage\/render\/\?), script-path=https://github.com/Keywos/rule/raw/main/JS/dy.js, requires-body=true, max-size=0
