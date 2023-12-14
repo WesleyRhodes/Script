@@ -4,17 +4,17 @@
 hostname = %APPEND% *.youdao.com
 
 
-[Rule]
-URL-REGEX,^https:\/\/dict.youdao.com\/vip\/plan\/list,Reject
-URL-REGEX,^https:\/\/dictvip-business.youdao.com\/common\/vipconfig,Reject
-URL-REGEX,^https:\/\/wow.youdao.com\/feed,Reject
-URL-REGEX,^https:\/\/wow.youdao.com\/kvConfig\/get,Reject
-URL-REGEX,^https:\/\/dict-live.youdao.com\/client\/user\/live\/hp\/feed,Reject
-URL-REGEX,^https:\/\/dict.youdao.com\/dictusertask\/mission\/list,Reject
-URL-REGEX,^https:\/\/dict.youdao.com\/homepage\/activity\/entrance\/get,Reject-dict
-URL-REGEX,^https:\/\/dict.youdao.com\/infoline\/toolbar\/data\/v2,Reject
-URL-REGEX,^https:\/\/cdke.youdao.com\/course3\/recommend\/dict\/startup ,Reject
-URL-REGEX,^https:\/\/api-overmind.youdao.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig,Reject
-URL-REGEX,^https:\/\/wow.youdao.com\/post\/glQDUEzoDV,Reject
-URL-REGEX,^https:\/\/dict.youdao.com\/dictusertask\/system\/config,Reject
-URL-REGEX,^https:\/\/foundation.youdao.com\/initManager,Reject-dict
+[URL Rewrite]
+^https:\/\/dict.youdao.com\/vip\/plan\/list reject-dict
+^https:\/\/dictvip-business.youdao.com\/common\/vipconfig reject-dict
+^https:\/\/wow.youdao.com\/feed reject-dict
+^https:\/\/wow.youdao.com\/kvConfig\/get reject-dict
+^https:\/\/dict-live.youdao.com\/client\/user\/live\/hp\/feed reject-dict
+^https:\/\/dict.youdao.com\/dictusertask\/mission\/list reject-dict
+^https:\/\/dict.youdao.com\/homepage\/activity\/entrance\/get reject-dict-dict
+^https:\/\/dict.youdao.com\/infoline\/toolbar\/data\/v2 reject-dict
+^https:\/\/cdke.youdao.com\/course3\/recommend\/dict\/startup  reject-dict
+^https:\/\/api-overmind.youdao.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig reject-dict
+^https:\/\/wow.youdao.com\/post\/glQDUEzoDV reject-dict
+^https:\/\/dict.youdao.com\/dictusertask\/system\/config reject-dict
+^https:\/\/foundation.youdao.com\/initManager reject-dict-dict
