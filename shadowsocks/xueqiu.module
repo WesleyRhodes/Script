@@ -2,17 +2,6 @@
 #!desc=雪球去广告 quote=@RuCu6
 
 
-[MITM]
-hostname= %APPEND%  *.xueqiu.com
-
 [URL Rewrite]
-^https?:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? - REJECT-DICT
-^https?:\/\/fund\.xueqiu\.com\/fundx - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json - REJECT-DICT
-^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json - REJECT-DICT
-^https?:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles - REJECT-DICT
+
+^https:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
