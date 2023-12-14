@@ -1,0 +1,19 @@
+#!name=wydict
+#!desc=网易词典
+[MITM]
+hostname = %APPEND% *.youdao.com
+
+[URL Rewrite]
+^https:\/\/dict.youdao.com\/vip\/plan\/list url reject
+^https:\/\/dictvip-business.youdao.com\/common\/vipconfig url reject
+^https:\/\/wow.youdao.com\/feed url reject
+^https:\/\/wow.youdao.com\/kvConfig\/get url reject
+^https:\/\/dict-live.youdao.com\/client\/user\/live\/hp\/feed url reject
+^https:\/\/dict.youdao.com\/dictusertask\/mission\/list url reject
+^https:\/\/dict.youdao.com\/homepage\/activity\/entrance\/get url reject-dict
+^https:\/\/dict.youdao.com\/infoline\/toolbar\/data\/v2 url reject
+^https:\/\/cdke.youdao.com\/course3\/recommend\/dict\/startup  url reject
+^https:\/\/api-overmind.youdao.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig url reject
+^https:\/\/wow.youdao.com\/post\/glQDUEzoDV url reject
+^https:\/\/dict.youdao.com\/dictusertask\/system\/config url reject
+^https:\/\/foundation.youdao.com\/initManager url reject-dict
