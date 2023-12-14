@@ -29,16 +29,9 @@ headers: { Location: url },
 
 };
 console.log('dy123_1'+JSON.stringify(response))
-
-var i = JSON.parse(response);
-console.log('dy123'+JSON.stringify(i));
-
-//var i = JSON.parse(response);
-//console.log('dy123'+JSON.stringify(i);
 $done({ response });
-
 } else if (/aweme\.snssdk\.com\/aweme\/homepage\/render/.test(url)) {
-
+console.log('dy123_2'+url);
 var i = JSON.parse($response.body);
 
 if (i?.data?.tab_list) {
