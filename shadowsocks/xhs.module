@@ -1,0 +1,10 @@
+#!name=xhs
+#!desc=小红书精华+原图保存
+#!quote=@RuCu6
+[MITM]
+hostname = %APPEND% *.xiaohongshu.com
+
+[Script]
+xhs = type=http-response, pattern=https://edith.xiaohongshu.com/api/sns/v2/note/feed, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, max-size=-1, timeout=60
+xhs = type=http-response, pattern=https://edith.xiaohongshu.com/api/sns/v1/note/live_photo/save, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/red_book_live_v2.js, requires-body=true, max-size=-1, timeout=60
+
