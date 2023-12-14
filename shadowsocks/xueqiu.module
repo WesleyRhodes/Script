@@ -4,14 +4,16 @@
 [MITM]
 hostname = %APPEND% *.xueqiu.com
 
-[URL Rewrite]
-^https:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json url reject-dict
-^https:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? url reject-dict
-^https:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? url reject-dict
-^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? url reject-dict
-^https:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? url reject-dict
-^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? url reject-dict
-^https:\/\/fund\.xueqiu\.com\/fundx url reject-dict
-^https:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json url reject-dict
-^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json url reject-dict
-^https:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles url reject-dict
+
+
+[Rule]
+URL-REGEX,^https:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\?,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\?,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\?,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\?,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\?,Reject
+URL-REGEX,^https:\/\/fund\.xueqiu\.com\/fundx,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json,Reject
+URL-REGEX,^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json,Reject
+URL-REGEX,^https:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles,Reject
