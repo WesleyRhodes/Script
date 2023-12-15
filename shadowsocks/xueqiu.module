@@ -7,14 +7,14 @@ hostname= %APPEND%  api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com
 
 [URL Rewrite]
 
-^https:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? - reject-dict
-^https:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? - reject-dict
+^https?:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? - reject-dict
+^https?:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? - reject-dict
 # 雪球广告
-^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? - reject-dict
-^https:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? - reject-dict
-^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? - reject-dict
-^https:\/\/fund\.xueqiu\.com\/fundx - reject-dict
-^https:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json - reject-dict
-^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json - reject-dict
-^https:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles - reject-dict
-^https:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
+^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? - reject-dict
+^https?:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? - reject-dict
+^https?:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? - reject-dict
+^https?:\/\/fund\.xueqiu\.com\/fundx - reject-dict
+^https?:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json - reject-dict
+^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json - reject-dict
+^https?:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles - reject-dict
+^https?:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
