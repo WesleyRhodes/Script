@@ -3,8 +3,8 @@
 
 [MITM]
 
-hostname = %APPEND% baidu.com
+hostname = %APPEND% raw.githubusercontent.com
 
 [URL Rewrite]
 
-^https:\/\/www\.baidu\.com\/ - reject
+^https:\/\/raw\.githubusercontent\.com\/.*\/.*\/.*\.json - reject-dict
