@@ -7,4 +7,4 @@ hostname = %APPEND% raw.githubusercontent.com
 
 [URL Rewrite]
 
-^https:\/\/raw\.githubusercontent\.com\/mieqq\/mieqq\/.*\.json - reject-dict
+^https:\/\/raw\.githubusercontent\.com\/WesleyRhodes\/Script\/.*\.json - reject-dict
