@@ -1,0 +1,19 @@
+#!name=Flyert
+#!desc=茶馆去广告
+#!author=nnnjjj
+
+[MITM]
+
+hostname = %APPEND% *.flyert.com
+
+
+
+[URL Rewrite]
+
+^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/ - reject-img
+
+[Script]
+#!Flyert= type=http-response, pattern=^https:\/\/((tnc|dm)[^\/]+\.\w+.com\/get_domains\/v\d\/\?|aweme\.snssdk\.com\/aweme\/homepage\/render\/\?), script-path=https://github.com/WesleyRhodes/Script/blob/main/js/dy.js, requires-body=true, max-size=0
+
+
+
