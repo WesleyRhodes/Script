@@ -1,5 +1,5 @@
 #!name=xueqiu
-#!desc=雪球去广告@RuCu6
+#!desc=雪球去广告
 
 [MITM]
 
@@ -9,7 +9,6 @@ hostname= %APPEND%  api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imed
 ^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ - reject-200
 ^https?:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? - reject-dict
 ^https?:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json\? - reject-dict
-# 雪球广告
 ^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json\? - reject-dict
 ^https?:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json\? - reject-dict
 ^https?:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? - reject-dict
