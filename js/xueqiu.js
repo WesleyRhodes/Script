@@ -1,10 +1,9 @@
 // 2023-12-15 14:12:00
-
-if (!$response.body) $done({});
-const method = $request.method;
-const url = $request.url;
+let url = $request.url;
 let body = $response.body;
+console.log('dy123_let url⚠️'+url);
 console.log('⚠️xueqiuxq=========================================================================⚠️');
+
 if (url.includes("timeline_tab_name")) {
       let obj = JSON.parse(body);
       obj.data.timeline_tab_name.content.name="nnnnjjjj";
