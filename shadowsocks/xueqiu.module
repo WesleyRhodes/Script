@@ -3,7 +3,7 @@
 
 [MITM]
 
-hostname= %APPEND%  api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imedao.com
+hostname= %APPEND% api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imedao.com
 
 [URL Rewrite]
 ^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ - reject-200

@@ -20,9 +20,9 @@ if (url.includes("timeline_tab_name")) {
       obj.data.home_tab_dynamic.content.url="";
       obj.data.home_tab_dynamic.content.is_web_url=false;
 
-      obj.data.trade_open_account_promotion_url={};
+      obj.data.trade_open_account_promotion_url={ };
 
-      obj.data.community_ad_download_msg={};
+      obj.data.community_ad_download_msg= { };
 
       obj.data.newhome_market_enable.content.enable=false;
       obj.data.snowpard_ad_switch.content.value=0;
@@ -33,7 +33,7 @@ if (url.includes("timeline_tab_name")) {
       obj.data.snowpard_ad_switch_detail_comment.content.value=0;   
       obj.data.snowpard_ad_switch_search_text.content.value=0;
       obj.data.snowpard_ad_switch_recommend_banner.content.value=0;
-      obj.data.status_detail_ad_strategy.content=[];
+      obj.data.status_detail_ad_strategy.content=[ ];
       obj.data.bee_config_banner_asset.content.value=0;
       body = JSON.stringify(obj);
       console.log('xq123替换body成功⚠️'+JSON.stringify(obj));
