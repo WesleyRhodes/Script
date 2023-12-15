@@ -11,7 +11,8 @@ hostname = %APPEND% *.flyert.com, ptf.flyertrip.com, 47.100.65.202
 [URL Rewrite]
 
 ^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/ - reject-img
-
+^https?:\/\/(www\.flyert\.com)|(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/source\/plugin\/mobile\/mobile\.php\?module=basicdata&type=app_onoff - reject-dict
+^https?:\/\/(www\.flyert\.com)|(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/source\/plugin\/mobile\/mobile\.php\?module=advis&apptype=flyertea - reject-dict
 [Script]
 Flyert = type=http-response, pattern=^https?:\/\/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(www\.flyert\.com)\/source\/plugin\/mobile\/mobile\.php\?module=advis&apptype, script-path=https://raw.githubusercontent.com/WesleyRhodes/Script/main/js/flyert.js, requires-body=true, max-size=0
 
