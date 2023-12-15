@@ -17,3 +17,10 @@ hostname= %APPEND%  api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imed
 ^https?:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json - reject-dict
 ^https?:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles - reject-dict
 ^https?:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
+
+
+[Script]
+xueqiu= type=http-response, pattern=^https:\/\/api\.xueqiu\.com\/analysis\/home\/my_tab\.json, script-path=https://github.com/WesleyRhodes/Script/blob/main/js/xueqiu.js, requires-body=true, max-size=0
+xueqiu= type=http-response, pattern=/^https:\/\/open\.xueqiu\.com\/mpaas\/config\/content\?appkey=.*&keys=timeline_tab_name/, script-path=https://github.com/WesleyRhodes/Script/blob/main/js/xueqiu.js, requires-body=true, max-size=0
+
+
