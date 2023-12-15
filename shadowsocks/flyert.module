@@ -4,7 +4,7 @@
 
 [MITM]
 
-hostname = %APPEND% *.flyert.com, ptf.flyertrip.com 
+hostname = %APPEND% *.flyert.com, ptf.flyertrip.com, 47.100.65.202
 
 
 
