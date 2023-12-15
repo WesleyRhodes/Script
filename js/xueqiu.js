@@ -51,3 +51,6 @@ if (url.includes("/analysis/home/my_tab.json")) {
       body = JSON.stringify(obj);
       $done({ body });
     }
+else {
+    $done();
+}
