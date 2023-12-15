@@ -1,9 +1,9 @@
 #!name=雪球去广告
-#!desc=雪球去广告+自定义0425
+#!desc=雪球去广告自定义0425
 
 [MITM]
 
-hostname= %APPEND% api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imedao.com
+hostname = %APPEND% api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imedao.com
 
 [URL Rewrite]
 ^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ - reject-200
