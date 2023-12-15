@@ -29,6 +29,7 @@ headers: { Location: url },
 
 };
 console.log('dy123_1'+JSON.stringify(response))
+
 $done({ response });
 } else if (/aweme\.snssdk\.com\/aweme\/homepage\/render/.test(url)) {
 console.log('dy123_2'+url);
