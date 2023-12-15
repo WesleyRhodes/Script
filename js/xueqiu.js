@@ -5,7 +5,7 @@ const method = $request.method;
 const url = $request.url;
 let body = $response.body;
 
-if (url.includes("keys=timeline_tab_name")) {
+if (url.includes("timeline_tab_name")) {
       let obj = JSON.parse(body);
       obj.data.timeline_tab_name.content.name="nnnnjjjj";
       obj.data.timeline_tab_name.update_type=0;
