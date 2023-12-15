@@ -5,7 +5,7 @@
 
 hostname = %APPEND% api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imedao.com
 
-
+/**
 [URL Rewrite]
 ^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ - reject-200
 ^https?:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json\? - reject-dict
@@ -20,6 +20,7 @@ hostname = %APPEND% api.xueqiu.com, fund.xueqiu.com, open.xueqiu.com, xqimg.imed
 ^https?:\/\/api.xueqiu.com\/ucprofile\/api\/user\/batchGetUserBasicInfo.json - reject-dict
 ^https?:\/\/api.xueqiu.com\/lightsnow\/launch\/plan\/bee\/query.json - reject-dict
 
+*/
 
 [Script]
 xueqiu = type=http-response, pattern=^https?:\/\/api\.xueqiu\.com\/analysis\/home\/my_tab\.json, script-path=https://raw.githubusercontent.com/WesleyRhodes/Script/main/js/xueqiu.js, requires-body=true, max-size=0,enable=true
