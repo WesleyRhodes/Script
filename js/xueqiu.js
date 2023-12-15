@@ -1,8 +1,8 @@
 // 2023-12-15 14:12:00
 let url = $request.url;
 let body = $response.body;
-console.log('dy123_let url_in⚠️'+url);
-console.log('⚠️xueqiuxq=========================START================================================⚠️');
+console.log('dy123_let url_in'+url);
+console.log('xueqiuxq=========================START================================================');
 
 if (url.includes("timeline_tab_name")) {
       let obj = JSON.parse(body);
@@ -36,7 +36,7 @@ if (url.includes("timeline_tab_name")) {
       obj.data.status_detail_ad_strategy.content=[ ];
       obj.data.bee_config_banner_asset.content.value=0;
       body = JSON.stringify(obj);
-      console.log('xq123替换body成功⚠️'+JSON.stringify(obj));
+      console.log('xq123替换body成功'+JSON.stringify(obj));
       $done({ body });
     }
 
@@ -49,13 +49,13 @@ if (url.includes("/analysis/home/my_tab.json")) {
         jsonData.data.list[index] = {};
         }
       body = JSON.stringify(obj);
-      console.log('xq456替换body成功⚠️'+JSON.stringify(obj));
+      console.log('xq456替换body成功'+JSON.stringify(obj));
 
       $done({ body });
     }
 else {
     $done();
-    console.log('xq789替换body失败⚠️'+url);
+    console.log('xq789替换body失败'+url);
 }
 
-console.log('⚠️xueqiuxq===============================END==========================================⚠️');
+console.log('xueqiuxq===============================END==========================================');
