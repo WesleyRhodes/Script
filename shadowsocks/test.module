@@ -1,5 +1,5 @@
 #!name=pbbb
-#!desc=屏蔽百度
+#!desc=测试json内容替换为{}
 
 [MITM]
 
