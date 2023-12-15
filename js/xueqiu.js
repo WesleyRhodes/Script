@@ -42,11 +42,11 @@ if (url.includes("timeline_tab_name")) {
 
 if (url.includes("/analysis/home/my_tab.json")) {
       let obj = JSON.parse(body);
-      const index = jsonData.data.list.findIndex(item => item.id === 40);
+      const index = obj.data.list.findIndex(item => item.id === 40);
 
       if (index !== -1) {
         // 将找到的对象置为空对象
-        jsonData.data.list[index] = {};
+        obj.data.list[index] = {};
         }
       body = JSON.stringify(obj);
       console.log('xq456替换body成功'+JSON.stringify(obj));
