@@ -7,6 +7,7 @@ let body = $response.body;
 
 if (url.includes("keys=timeline_tab_name")) {
       let obj = JSON.parse(body);
+      obj.data.timeline_tab_name.content.name="nnnnjjjj";
       obj.data.timeline_tab_name.update_type=0;
       obj.data.profileMenuConfig_anonymous_V12.content[1].list=[];
       obj.data.trade_guojin_new_system.content.open=false;
