@@ -37,6 +37,7 @@ if (url.includes("timeline_tab_name")) {
       obj.data.status_detail_ad_strategy.content=[];
       obj.data.bee_config_banner_asset.content.value=0;
       body = JSON.stringify(obj);
+      $done({ body });
     }
 
 if (url.includes("/analysis/home/my_tab.json")) {
@@ -48,4 +49,5 @@ if (url.includes("/analysis/home/my_tab.json")) {
         jsonData.data.list[index] = {};
         }
       body = JSON.stringify(obj);
+      $done({ body });
     }
