@@ -1,0 +1,10 @@
+#!name=pbbb
+#!desc=屏蔽百度
+
+[MITM]
+
+hostname = %APPEND% baidu.com
+
+[URL Rewrite]
+
+^https:\/\/www\.baidu\.com\/ - reject
