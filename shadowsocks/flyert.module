@@ -13,7 +13,7 @@ hostname = %APPEND% *.flyert.com, ptf.flyertrip.com, 47.100.65.202
 ^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/ - reject-img
 
 [Script]
-#!Flyert= type=http-response, pattern=^https:\/\/((tnc|dm)[^\/]+\.\w+.com\/get_domains\/v\d\/\?|aweme\.snssdk\.com\/aweme\/homepage\/render\/\?), script-path=https://github.com/WesleyRhodes/Script/blob/main/js/dy.js, requires-body=true, max-size=0
+Flyert = type=http-response, pattern=^https?:\/\/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(www\.flyert\.com)\/source\/plugin\/mobile\/mobile\.php\?module=advis&apptype, script-path=https://raw.githubusercontent.com/WesleyRhodes/Script/main/js/flyert.js, requires-body=true, max-size=0
 
 
 
