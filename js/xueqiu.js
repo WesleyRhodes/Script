@@ -37,6 +37,7 @@ if (url.includes("timeline_tab_name")) {
       obj.data.status_detail_ad_strategy.content=[];
       obj.data.bee_config_banner_asset.content.value=0;
       body = JSON.stringify(obj);
+      console.log('xq123替换body成功⚠️'+JSON.stringify(obj));
       $done({ body });
     }
 
@@ -49,6 +50,8 @@ if (url.includes("/analysis/home/my_tab.json")) {
         jsonData.data.list[index] = {};
         }
       body = JSON.stringify(obj);
+      console.log('xq456替换body成功⚠️'+JSON.stringify(obj));
+
       $done({ body });
     }
 else {
