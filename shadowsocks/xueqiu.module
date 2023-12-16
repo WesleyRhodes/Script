@@ -3,8 +3,7 @@
 
 [MITM]
 
-hostname = %APPEND% *.xueqiu.com, xqimg.imedao.com, 101.201.62.20, 101.201.62.22
-
+hostname = %APPEND% *.xueqiu.com, xqimg.imedao.com, 101.201.62.20, 101.201.62.22, 101.201.175.228, 182.92.251.113
 
 
 [URL Rewrite]
